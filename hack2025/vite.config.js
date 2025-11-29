@@ -4,8 +4,4 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-<<<<<<< HEAD
-=======
-  base: '/2400030576-InSemExamination/'
->>>>>>> d18deb0 (v3)
 })

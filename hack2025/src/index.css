@@ -1,0 +1,99 @@
+/* White background, black text per your request. Clean, professional */
+:root{
+  --accent: #0b5ed7;
+  --muted: #666;
+  --card-bg: #ffffff;
+  --card-border: #e6e6e6;
+}
+
+*{box-sizing:border-box}
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: white;
+  color: #111;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.app-root {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: 28px auto;
+  padding: 20px;
+}
+
+.header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  text-align:center;
+  width:100%;
+}
+
+/* card */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(17,17,17,0.04);
+}
+
+/* buttons */
+.btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn.small { padding: 6px 10px; font-size: 13px; }
+.btn.outline {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+.btn.selected {
+  background: #0747a6;
+}
+
+/* muted text */
+.muted {
+  color: var(--muted);
+}
+
+/* inputs */
+input[type="text"], input[type="password"], select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* question rows */
+.question-row {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px dashed #f0f0f0;
+  margin-bottom: 10px;
+}
+
+/* small responsiveness */
+@media (max-width:600px) {
+  .container { padding: 14px; margin: 14px; }
+  .title { font-size: 18px; }
+}
